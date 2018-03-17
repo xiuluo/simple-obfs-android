@@ -49,3 +49,11 @@ install:
 
 script:
     - $SBTPATH/sbt android:package
+    
+deploy:
+  provider: releases
+  api_key: "e44508001dec93b1b3f7099c3250c7ccda688e44"
+  file: "FILE TO UPLOAD"
+  skip_cleanup: true
+  on:
+    tags: true
