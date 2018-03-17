@@ -54,7 +54,7 @@ before_deploy:
       - git config --local user.name "xiuluo"
       - git config --local user.email "chen919695074@gmail.com"
       - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
-      - find $HOME/ -name "obfs-local-debug.apk" -exec mv {} $HOME/
+      - find $HOME/ -name "obfs-local-debug.apk" -exec mv {} $HOME/ \;
 deploy:
   provider: releases
   api_key:
