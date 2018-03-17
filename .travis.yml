@@ -57,6 +57,6 @@ before_deploy:
 
 deploy:
   provider: releases
-  api_key: "e44508001dec93b1b3f7099c3250c7ccda688e44"
+  api_key: "b87d77f7792c37ff25b58557b9666ded3db70198"
   file: "FILE TO UPLOAD"
   skip_cleanup: true
