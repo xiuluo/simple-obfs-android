@@ -49,11 +49,14 @@ install:
 
 script:
     - $SBTPATH/sbt android:package
-    
+
+before_deploy:
+      - git config --local user.name "xiuluo"
+      - git config --local user.email "chen919695074@gmail.com"
+      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+
 deploy:
   provider: releases
   api_key: "e44508001dec93b1b3f7099c3250c7ccda688e44"
   file: "FILE TO UPLOAD"
   skip_cleanup: true
-  on:
-    tags: true
