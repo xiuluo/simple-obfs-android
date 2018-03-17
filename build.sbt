@@ -22,4 +22,4 @@ shrinkResources := true
 typedResources := false
 resConfigs := Seq("zh-rCN")
 
-libraryDependencies += "com.github.shadowsocks" %% "plugin" % "0.0.2"
+libraryDependencies += "com.github.shadowsocks" %% "plugin" % "0.0.5"
